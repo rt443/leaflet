@@ -36,11 +36,7 @@
 			popupOptions: { maxWidth: 530, centered: false },
 			hoverFld: "name"});
 		
-		//map.addLayer(geojsonWfsLayer);
-		
-		var fields = 'http://79.125.21.88:8080/geoserver/opengeo/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=opengeo%3Afields_900913&maxfeatures=50&outputformat=json'
-		L.geoJson(fields).addTo(map);
-
+		map.addLayer(geojsonWfsLayer);
 
 
 		L.marker([51.5, -0.09]).addTo(map)
